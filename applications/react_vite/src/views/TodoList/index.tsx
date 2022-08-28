@@ -32,7 +32,15 @@ const TodoList = () => {
         <Button variant="light" radius="lg" className="mx-[10px]" size="sm">
           新增
         </Button>
-        <Button variant="light" radius="lg" className="mx-[10px]" size="sm">
+        <Button
+          variant="light"
+          radius="lg"
+          className="mx-[10px]"
+          size="sm"
+          onClick={() => {
+            setList([]);
+          }}
+        >
           清空
         </Button>
       </div>
