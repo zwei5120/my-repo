@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input, Button, List } from "@mantine/core";
 
 const TodoList = () => {
+  console.log('TodoList')
   const [list, setList] = useState<
     {
       title: string;
