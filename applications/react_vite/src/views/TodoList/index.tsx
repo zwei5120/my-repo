@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Input, Button, List } from "@mantine/core";
 
 const TodoList = () => {
@@ -25,11 +25,17 @@ const TodoList = () => {
       title: "打球",
     },
   ]);
+
   return (
     <div className="w-full h-full p-[20px]">
       <div className="w-full flex">
         <Input className="w-[100px] h-[40px]"></Input>
-        <Button variant="light" radius="lg" className="mx-[10px]" size="sm">
+        <Button
+          variant="light"
+          radius="lg"
+          className="mx-[10px]"
+          size="sm"
+        >
           新增
         </Button>
         <Button
